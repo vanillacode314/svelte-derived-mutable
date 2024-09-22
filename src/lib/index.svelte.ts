@@ -30,13 +30,15 @@ function unwrap<T>(input: T): T {
 }
 
 /**
+ * Helper function to create a derived rune in svelte 5 which can be mutated
+ *
  * @template T - type of your rune value
- * @param init - function that returns initial value
+ * @param formula - function that returns the derived value
  * @returns A derived rune that can be mutated using .value acceessor
  */
-export function derivedMutable<T>(init: () => T): { value: T } {
+export function derivedMutable<T>(formula: () => T): { value: T } {
 	const state = $derived.by(() => {
-		let state = $state(unwrap(deepTrack(init())));
+		let state = $state(unwrap(deepTrack(formula())));
 		return {
 			get value() {
 				return state;
