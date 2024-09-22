@@ -49,7 +49,8 @@ curl "https://raw.githubusercontent.com/vanillacode314/svelte-derived-mutable/re
 ### Install from jsr
 
 ```sh
-npx jsr add @vanillacode314/svelte-derived-mutable
-pnpm dlx jsr add @vanillacode314/svelte-derived-mutable
-bun x jsr add @vanillacode314/svelte-derived-mutable
+npm install @vanillacode314/svelte-derived-mutable
+yarn add @vanillacode314/svelte-derived-mutable
+pnpm add @vanillacode314/svelte-derived-mutable
+bun add @vanillacode314/svelte-derived-mutable
 ```

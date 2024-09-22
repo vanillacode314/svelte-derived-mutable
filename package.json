@@ -1,10 +1,10 @@
 {
-  "name": "svelte-derived-mutable",
-  "version": "1.0.0",
+  "name": "@vanillacode314/svelte-derived-mutable",
+  "version": "1.0.3",
   "type": "module",
   "author": "Raqueebuddin Aziz",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/vanillacode314/svelte-derived-mutable#readme",
   "exports": {
     ".": {
       "types": "./dist/index.svelte.d.ts",
@@ -45,5 +45,19 @@
     "typescript-eslint": "^8.0.0",
     "vite": "^5.0.3",
     "vitest": "^2.0.0"
+  },
+  "description": "Helper function to create a derived rune in svelte 5 which can be mutated ",
+  "main": "./dist/index.svelte.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanillacode314/svelte-derived-mutable.git"
+  },
+  "keywords": [
+    "svelte",
+    "runes"
+  ],
+  "types": "./dist/index.svelte.d.ts",
+  "bugs": {
+    "url": "https://github.com/vanillacode314/svelte-derived-mutable/issues"
   }
 }
