@@ -9,8 +9,8 @@ function deepTrack<T>(input: T): T {
 		...Object.getOwnPropertyNames(input),
 		...Object.getOwnPropertySymbols(input)
 	] as (keyof typeof input)[];
-	for (const value of keys) {
-		deepTrack(value);
+	for (const key of keys) {
+		deepTrack(input[key]);
 	}
 	return input;
 }
