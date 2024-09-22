@@ -46,11 +46,10 @@ Run this command where you want to download the file
 curl "https://raw.githubusercontent.com/vanillacode314/svelte-derived-mutable/refs/heads/main/src/lib/index.svelte.ts" -o svelte-derived-mutable.svelte.ts
 ```
 
-### Install as an npm package
+### Install from jsr
 
 ```sh
-npm install svelte-derived-mutable
-yarn add svelte-derived-mutable
-pnpm add svelte-derived-mutable
-bun add svelte-derived-mutable
+npx jsr add @vanillacode314/svelte-derived-mutable
+pnpm dlx jsr add @vanillacode314/svelte-derived-mutable
+bun x jsr add @vanillacode314/svelte-derived-mutable
 ```
