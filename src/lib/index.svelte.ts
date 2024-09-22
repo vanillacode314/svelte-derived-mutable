@@ -29,7 +29,12 @@ function unwrap<T>(input: T): T {
 	return retval;
 }
 
-function derivedMutable<T>(init: () => T): { value: T } {
+/**
+ * @template T - type of your rune value
+ * @param init - function that returns initial value
+ * @returns A derived rune that can be mutated using .value acceessor
+ */
+export function derivedMutable<T>(init: () => T): { value: T } {
 	const state = $derived.by(() => {
 		let state = $state(unwrap(deepTrack(init())));
 		return {
@@ -51,5 +56,3 @@ function derivedMutable<T>(init: () => T): { value: T } {
 		}
 	};
 }
-
-export { derivedMutable };
