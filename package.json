@@ -7,11 +7,10 @@
   "homepage": "",
   "exports": {
     ".": {
-      "svelte": "./dist/index.js"
+      "types": "./dist/index.svelte.d.ts",
+      "svelte": "./dist/index.svelte.js"
     }
   },
-  "svelte": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
