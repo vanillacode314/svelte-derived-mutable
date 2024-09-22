@@ -5,8 +5,16 @@
   "author": "Raqueebuddin Aziz",
   "license": "MIT",
   "homepage": "",
+  "exports": {
+    ".": {
+      "svelte": "./dist/index.js"
+    }
+  },
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite dev",
     "build": "pnpm package",
